@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-serif: "Instrument Serif", Georgia, serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-ivory-50: #FBFBF9;
+  --color-ivory-100: #F8F7F2;
+  --color-ivory-200: #F1F0EA;
+  --color-ivory-300: #E6E4DC;
+  
+  --color-ink-900: #171717;
+  --color-ink-700: #333230;
+  --color-ink-500: #5F5D57;
+  --color-ink-400: #88867F;
+  --color-ink-200: #DCDAD2;
+  --color-ink-border: #E8E6DF;
+  
+  --color-cadence-lime: #C8E63A;
+  --color-cadence-lime-hover: #B8D62E;
+  --color-cadence-yellow: #F2C94C;
+}
+
+:root {
+  --ease-cadence: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Lenis smooth scrolling rules */
+html.lenis, html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #F8F7F2;
+}
+::-webkit-scrollbar-thumb {
+  background: #DCDAD2;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B8B5AB;
+}
+
+/* Very subtle 1px engineering grid (opacity ~0.08, used sparingly) */
+.cadence-subtle-grid {
+  background-image: 
+    linear-gradient(to right, rgba(23, 23, 23, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(23, 23, 23, 0.05) 1px, transparent 1px);
+  background-size: 64px 64px;
+}
+
+/* Subtle grain noise simulation */
+.cadence-grain {
+  background-image: radial-gradient(rgba(23, 23, 23, 0.04) 1px, transparent 1px);
+  background-size: 16px 16px;
+}
+
+/* Lime marker highlight */
+.lime-highlight {
+  background: linear-gradient(120deg, rgba(200, 230, 58, 0.55) 0%, rgba(200, 230, 58, 0.55) 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 42%;
+  background-position: 0 88%;
+}
+
+/* Ambient glow */
+@keyframes cadence-float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.float-slow {
+  animation: cadence-float 7s ease-in-out infinite;
+}
+
+/* Disable custom cursor on touch devices or reduced motion */
+@media (pointer: coarse) or (prefers-reduced-motion: reduce) {
+  .cadence-custom-cursor {
+    display: none !important;
+  }
+}
