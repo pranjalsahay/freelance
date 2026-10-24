@@ -29,70 +29,70 @@ export default function Testimonials() {
     {
       id: "elena",
       chapterNumber: "01",
-      chapterTitle: "STAY PRESENT",
-      duration: "42:18",
+      chapterTitle: "CONTEXT CHANGES MEANING",
+      duration: "Axiom 01",
       quoteParts: [
-        { text: "Instead of spending ten minutes writing down what happened, I can spend those ten minutes actually " },
-        { text: "participating", highlight: true },
-        { text: " in the conversation." }
+        { text: "Context is not metadata. Context changes " },
+        { text: "meaning", highlight: true },
+        { text: ". Intelligence should understand why information matters here, now, and for this objective." }
       ],
       author: "Elena Rostova",
-      role: "VP of Product, Northwind Tech",
+      role: "Lead Cognitive Researcher",
       initials: "ER",
-      company: "NORTHWIND",
-      verifiedTag: "VERIFIED CUSTOMER · NORTHWIND",
+      company: "KNULL LABS",
+      verifiedTag: "RESEARCH PERSPECTIVE · CONTEXT",
       waveformPath: "M 0 60 C 100 60, 150 25, 220 25 C 290 25, 320 90, 400 90 C 470 90, 520 35, 600 35 C 680 35, 720 80, 800 80 C 880 80, 930 60, 1000 60",
       secondaryWavePath: "M 0 60 C 80 60, 140 45, 200 45 C 280 45, 340 75, 420 75 C 500 75, 560 45, 650 45 C 730 45, 820 65, 900 65 C 950 65, 980 60, 1000 60",
       markers: [
-        { id: "m1", x: 220, y: 25, time: "14:22", note: "Customer concern raised" },
-        { id: "m2", x: 520, y: 45, time: "28:15", note: "Key architecture requirement" },
-        { id: "m3", x: 800, y: 80, time: "39:40", note: "Consensus reached" },
+        { id: "m1", x: 220, y: 25, time: "Axiom 01", note: "Context changes meaning" },
+        { id: "m2", x: 520, y: 45, time: "Axiom 02", note: "Situational relevance" },
+        { id: "m3", x: 800, y: 80, time: "Axiom 03", note: "Objective alignment" },
       ]
     },
     {
       id: "marcus",
       chapterNumber: "02",
-      chapterTitle: "REMEMBER EVERYTHING",
-      duration: "38:45",
+      chapterTitle: "EXPERIENCE OVER RETRIEVAL",
+      duration: "Axiom 02",
       quoteParts: [
-        { text: "Cadence eliminated the awkward notetaker bot from our customer meetings. Our enterprise clients don't feel " },
-        { text: "recorded", highlight: true },
-        { text: "; they feel heard." }
+        { text: "Experience should matter. An intelligence that forgets everything is forced to repeatedly " },
+        { text: "rediscover", highlight: true },
+        { text: " the world." }
       ],
       author: "Marcus Thorne",
-      role: "Head of Revenue, Vertex Cloud",
+      role: "Autonomous Systems Researcher",
       initials: "MT",
-      company: "VERTEX",
-      verifiedTag: "VERIFIED CUSTOMER · VERTEX",
+      company: "KNULL CORE",
+      verifiedTag: "RESEARCH PERSPECTIVE · MEMORY",
       waveformPath: "M 0 60 C 80 60, 120 16, 180 16 C 240 16, 280 100, 350 100 C 420 100, 460 22, 540 22 C 620 22, 680 92, 760 92 C 840 92, 920 60, 1000 60",
       secondaryWavePath: "M 0 60 C 90 60, 150 80, 230 80 C 310 80, 370 30, 450 30 C 530 30, 600 85, 690 85 C 770 85, 860 40, 940 40 C 970 40, 990 60, 1000 60",
       markers: [
-        { id: "m4", x: 180, y: 16, time: "08:12", note: "Direct feedback on AI bots" },
-        { id: "m5", x: 460, y: 32, time: "22:30", note: "Security & privacy objection" },
-        { id: "m6", x: 760, y: 92, time: "34:10", note: "Enterprise terms approved" },
+        { id: "m4", x: 180, y: 16, time: "Memory 01", note: "Persistent experience accumulation" },
+        { id: "m5", x: 460, y: 32, time: "Memory 02", note: "Overcoming stateless rediscovery" },
+        { id: "m6", x: 760, y: 92, time: "Memory 03", note: "Lived reality anchoring" },
       ]
     },
     {
       id: "chloe",
       chapterNumber: "03",
-      chapterTitle: "LEAVE WITH CLARITY",
-      duration: "51:02",
+      chapterTitle: "INDIVIDUALITY IS THE POINT",
+      duration: "Axiom 03",
       quoteParts: [
-        { text: "The pre-meeting briefing is like having a chief of staff " },
-        { text: "summarize", highlight: true },
-        { text: " our entire history with a client in thirty seconds flat." }
+        { text: "Different environments should produce different intelligence. This difference is not a flaw; it is the " },
+        { text: "entire point", highlight: true },
+        { text: "." }
       ],
       author: "Chloe Dubois",
-      role: "Managing Partner, Alpine Horizon",
+      role: "Foundational AI Architect",
       initials: "CD",
-      company: "ALPINE",
-      verifiedTag: "VERIFIED CUSTOMER · ALPINE",
+      company: "KNULL RESEARCH",
+      verifiedTag: "RESEARCH PERSPECTIVE · INDIVIDUALITY",
       waveformPath: "M 0 60 C 120 60, 180 32, 280 32 C 380 32, 440 88, 560 88 C 660 88, 740 36, 840 36 C 920 36, 960 60, 1000 60",
       secondaryWavePath: "M 0 60 C 140 60, 220 75, 340 75 C 460 75, 520 45, 660 45 C 780 45, 860 70, 940 70 C 970 70, 990 60, 1000 60",
       markers: [
-        { id: "m7", x: 280, y: 32, time: "11:05", note: "Historical client context" },
-        { id: "m8", x: 560, y: 88, time: "27:40", note: "SLA parameter confirmation" },
-        { id: "m9", x: 840, y: 36, time: "46:18", note: "Assigned follow-up actions" },
+        { id: "m7", x: 280, y: 32, time: "Design 01", note: "Environmental differentiation" },
+        { id: "m8", x: 560, y: 88, time: "Design 02", note: "Non-generalized intelligence" },
+        { id: "m9", x: 840, y: 36, time: "Design 03", note: "Artificial individuals in reality" },
       ]
     },
   ], []);
@@ -155,7 +155,7 @@ export default function Testimonials() {
 
   return (
     <section 
-      id="testimonials"
+      id="people"
       ref={containerRef}
       className="py-28 md:py-36 bg-[#F8F7F2] border-b border-[#E8E6DF] overflow-hidden relative select-none"
     >
@@ -175,7 +175,7 @@ export default function Testimonials() {
           >
             <span className="w-2 h-2 rounded-full bg-[#C8E63A]" />
             <span className="text-xs font-mono uppercase tracking-widest text-[#66635D]">
-              VOICES &bull; REAL EXPERIENCE
+              PEOPLE &bull; RESEARCH PERSPECTIVES
             </span>
           </motion.div>
 
@@ -187,7 +187,7 @@ export default function Testimonials() {
               transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
               className="text-5xl sm:text-6xl lg:text-7xl font-[550] tracking-[-0.035em] text-[#111111] leading-[0.96]"
             >
-              Let the conversation
+              Different intelligence
             </motion.h2>
           </div>
 
@@ -198,7 +198,7 @@ export default function Testimonials() {
               transition={{ duration: 0.8, delay: 0.12, ease: [0.22, 1, 0.36, 1] }}
               className="text-5xl sm:text-6xl lg:text-7xl font-serif italic font-normal text-[#111111] leading-[0.96]"
             >
-              be the work.
+              for different worlds.
             </motion.div>
           </div>
 
@@ -209,7 +209,7 @@ export default function Testimonials() {
             transition={{ duration: 0.6, delay: 0.22, ease: [0.22, 1, 0.36, 1] }}
             className="mt-5 text-base sm:text-lg text-[#66635D] leading-relaxed max-w-xl"
           >
-            Real people shouldn't have to choose between listening and taking notes.
+            Human intelligence is never truly detached from the individual using it. What someone knows, what they have experienced, and what they are trying to achieve all shape cognition.
           </motion.p>
         </div>
 

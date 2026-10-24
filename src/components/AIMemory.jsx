@@ -7,8 +7,8 @@ export default function AIMemory() {
   const containerRef = useRef(null);
   const isInView = useInView(containerRef, { once: false, margin: '-60px' });
   const { addToast } = useToast();
-  const [searchQuery, setSearchQuery] = useState("What did customers say about onboarding?");
-  const [activeQuery, setActiveQuery] = useState("What did customers say about onboarding?");
+  const [searchQuery, setSearchQuery] = useState("Why does context change meaning?");
+  const [activeQuery, setActiveQuery] = useState("Why does context change meaning?");
   const [isSearching, setIsSearching] = useState(false);
   const [hasSearched, setHasSearched] = useState(true);
 
@@ -22,9 +22,9 @@ export default function AIMemory() {
   const lineOpacity = useTransform(scrollYProgress, [0, 0.5, 1], [0.1, 0.35, 0.1]);
 
   const sampleQueries = [
-    "What did customers say about onboarding?",
-    "What did we promise Acme?",
-    "When is the Frankfurt AWS cluster launching?",
+    "Why does context change meaning?",
+    "How do systems adapt to reality?",
+    "Why does experience matter?",
   ];
 
   const handleRunSearch = (q) => {
@@ -48,14 +48,14 @@ export default function AIMemory() {
           <div className="flex items-center gap-2 mb-3">
             <span className="w-2 h-2 rounded-full bg-[#C8E63A]" />
             <span className="text-xs font-mono uppercase tracking-widest text-[#88867F]">
-              04 &bull; Cross-Meeting Recall
+              04 &bull; ACCUMULATED EXPERIENCE
             </span>
           </div>
           <h2 className="text-5xl sm:text-6xl lg:text-7xl font-[550] tracking-[-0.04em] text-[#171717] leading-[0.95]">
-            Remember <span className="font-serif italic font-normal">everything.</span>
+            Experience <span className="font-serif italic font-normal">should matter.</span>
           </h2>
           <p className="mt-4 text-base sm:text-lg text-[#5F5D57] leading-relaxed">
-            Ask Cadence what happened across every conversation. Uncover commitments, customer feedback, and technical decisions cited directly to the exact spoken second.
+            An intelligence that forgets everything is forced to repeatedly rediscover the world. Long-term advantage is not the interface. It is the accumulated experience of systems in reality.
           </p>
         </div>
 
@@ -144,20 +144,20 @@ export default function AIMemory() {
                 <div className="space-y-3">
                   <div className="flex items-center gap-2 text-xs font-mono text-[#171717] font-semibold">
                     <span className="w-2 h-2 rounded-full bg-[#C8E63A]" />
-                    <span>Synthesized Across 14 Meetings</span>
+                    <span>Synthesized From Persistent Experience</span>
                   </div>
 
-                  {activeQuery.includes("Acme") ? (
+                  {activeQuery.toLowerCase().includes("context") ? (
                     <p className="text-sm sm:text-base text-[#171717] leading-relaxed font-sans">
-                      "You committed to sending the revised pricing proposal by Friday. David Miller confirmed that Frankfurt data residency is a non-negotiable blocker for their 450 engineering seats."
+                      "Context is not metadata. Context changes meaning. Intelligence should understand why information matters here, now, and for this objective."
                     </p>
-                  ) : activeQuery.includes("Frankfurt") ? (
+                  ) : activeQuery.toLowerCase().includes("adapt") ? (
                     <p className="text-sm sm:text-base text-[#171717] leading-relaxed font-sans">
-                      "Alex Morgan and Sarah Chen locked November 14th for the dedicated Frankfurt AWS deployment, providing a two-week buffer for penetration testing."
+                      "Intelligence should change when reality changes. Continuous incorporation of meaningful information produces an unbroken operational loop."
                     </p>
                   ) : (
                     <p className="text-sm sm:text-base text-[#171717] leading-relaxed font-sans">
-                      "Across 14 customer conversations, onboarding friction appeared repeatedly. Specifically, <span className="lime-highlight font-medium">8 enterprise teams</span> requested self-serve SSO, while 6 pointed to confusion in workspace invitations."
+                      "Experience should matter. An intelligence that forgets everything is forced to repeatedly rediscover the world. <span className="lime-highlight font-medium">Different environments should produce different intelligence</span> — this is not a flaw; it is the point."
                     </p>
                   )}
                 </div>
@@ -165,25 +165,25 @@ export default function AIMemory() {
                 {/* Source Cards with Tooltips */}
                 <div className="pt-5 border-t border-[#E8E6DF] space-y-3">
                   <span className="text-[11px] font-mono text-[#88867F] uppercase block">
-                    Verified Citations (Hover to inspect spoken snippet):
+                    Foundational Citations (Hover to inspect research node):
                   </span>
 
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-3.5">
                     {[
                       {
-                        title: "Customer Discovery with Figma",
-                        date: "Sept 14 &bull; 10:30 AM",
-                        snippet: "'Three designers got stuck waiting for IT admin approval during OAuth setup.'",
+                        title: "Contextual Anchoring",
+                        date: "Pillar 01 &bull; Objective",
+                        snippet: "'Context is not metadata. Context changes meaning for active objectives.'",
                       },
                       {
-                        title: "Product Architecture Review",
-                        date: "Sept 21 &bull; 3:00 PM",
-                        snippet: "'Alex: Let's prioritize SSO invite-links in sprint 24 to clear up customer tickets.'",
+                        title: "Adaptive Feedback Loop",
+                        date: "Pillar 02 &bull; Environment",
+                        snippet: "'Intelligence should change when reality changes. Incorporate information continuously.'",
                       },
                       {
-                        title: "Enterprise Call with Acme",
-                        date: "Sept 28 &bull; 2:15 PM",
-                        snippet: "'David Miller: We cannot deploy to our 450 developers without Okta SCIM provisioning.'",
+                        title: "Individuality as Design",
+                        date: "Pillar 03 &bull; Grounding",
+                        snippet: "'Different environments produce different intelligence. Not a flaw; the point.'",
                       },
                     ].map((source, i) => (
                       <motion.div

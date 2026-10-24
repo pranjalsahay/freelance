@@ -42,58 +42,58 @@ export default function DuringMeeting() {
 
   const comparisons = [
     {
-      id: "launch",
-      title: "Release Timeline",
-      typed: "launch moved to Nov 14",
-      category: "Release Timeline",
+      id: "limit",
+      title: "Limit of Generalization",
+      typed: "generalization creates power and distance",
+      category: "Limit of Generalization",
       categoryColor: "bg-amber-50 text-amber-900 border-amber-200",
-      speaker: "James Wilson",
-      role: "CTO & Co-Founder",
-      initials: "JW",
+      speaker: "Knull Research",
+      role: "Cognitive Architecture",
+      initials: "LG",
       avatarBg: "bg-indigo-600",
-      timestamp: "14:35:12",
-      enhanced: "Agreement: General public rollout pushed back 2 weeks to November 14th to complete penetration testing and infrastructure audits.",
-      decision: "Target release locked for Nov 14. Freeze date set for Nov 7.",
-      actionItem: "Draft customer release advisory and update public status page.",
-      assignee: "James Wilson • Due Friday",
-      ticketTag: "Linear #REL-104",
-      audioQuote: "Let's officially lock November 14th as the general release date. I will draft the customer notice today.",
+      timestamp: "Thesis #01",
+      enhanced: "Generalization creates power. Generalization also creates distance. To generalize is to abstract.",
+      decision: "Scale without contextual grounding creates abstraction layers disconnected from reality.",
+      actionItem: "Re-anchor system reasoning to individual objectives and lived context.",
+      assignee: "Knull Core • Foundational",
+      ticketTag: "Thesis #01",
+      audioQuote: "Generalization creates power. Generalization also creates distance. To generalize is to abstract.",
     },
     {
-      id: "hosting",
-      title: "GDPR Compliance",
-      typed: "Frankfurt EU hosting required",
-      category: "GDPR Compliance",
+      id: "agi",
+      title: "The AGI Question",
+      typed: "what does 'General' actually mean?",
+      category: "The AGI Question",
       categoryColor: "bg-blue-50 text-blue-900 border-blue-200",
-      speaker: "Sarah Chen",
-      role: "VP of Information Security",
-      initials: "SC",
+      speaker: "Knull Research",
+      role: "Foundational Inquiry",
+      initials: "AQ",
       avatarBg: "bg-emerald-600",
-      timestamp: "14:28:45",
-      enhanced: "Strict requirement: Database cluster must reside exclusively within the Frankfurt AWS availability zone for GDPR data localization.",
-      decision: "Database instances for European enterprise clients will be dedicated to Frankfurt AWS.",
-      actionItem: "Deliver Frankfurt infrastructure architecture diagram to procurement.",
-      assignee: "Sarah Chen • Due Monday",
-      ticketTag: "Linear #SEC-312",
-      audioQuote: "Data sovereignty is non-negotiable for German enterprise clients. If Frankfurt isn't online, they will defer procurement.",
+      timestamp: "Thesis #02",
+      enhanced: "What does 'General' actually mean? Broad capability alone does not answer a deeper question: What kind of intelligence should exist inside such a system?",
+      decision: "Broad capability alone is insufficient. Systems must develop depth around context and behavior.",
+      actionItem: "Design architectures around persistent experience rather than generic interaction.",
+      assignee: "Knull Core • Directional",
+      ticketTag: "Thesis #02",
+      audioQuote: "Broad capability alone does not answer a deeper question: What kind of intelligence should exist inside such a system?",
     },
     {
-      id: "pricing",
-      title: "Commercial Terms",
-      typed: "pricing concern raised by Alex",
-      category: "Commercial Terms",
+      id: "different",
+      title: "Intelligence Different",
+      typed: "breakthrough from different not bigger",
+      category: "Alternative Destination",
       categoryColor: "bg-violet-50 text-violet-900 border-violet-200",
-      speaker: "Alex Morgan",
-      role: "Lead Product Strategist",
-      initials: "AM",
+      speaker: "Knull Research",
+      role: "Research Direction",
+      initials: "ID",
       avatarBg: "bg-purple-600",
-      timestamp: "14:22:18",
-      enhanced: "Alex's procurement team flagged budget constraints for 450 engineering seats. Requested volume discount addendum before Friday sign-off.",
-      decision: "Annual commitment of $94,000 approved subject to technical SLA confirmation.",
-      actionItem: "Provide revised enterprise pricing proposal with Frankfurt hosting addendum.",
-      assignee: "Alex Morgan • Due Thursday",
-      ticketTag: "HubSpot Deal #450",
-      audioQuote: "Our finance team wants to ensure the 450 seats come with priority SLA support without ballooning next quarter's budget.",
+      timestamp: "Thesis #03",
+      enhanced: "The next breakthrough may not come from making intelligence bigger. It may come from making intelligence different.",
+      decision: "Pivot AI research direction toward Artificial Individuals built around context and experience.",
+      actionItem: "Deploy systems designed to develop intelligence around objectives, experience and behaviour.",
+      assignee: "Knull Core • Destination",
+      ticketTag: "Thesis #03",
+      audioQuote: "The next breakthrough may not come from making intelligence bigger. It may come from making intelligence different.",
     },
   ];
 
@@ -111,20 +111,20 @@ export default function DuringMeeting() {
   const togglePlayback = () => {
     setIsPlaying(!isPlaying);
     if (!isPlaying) {
-      addToast(`Playing 48kHz audio snippet from ${comparisons[activeItemIndex].speaker}`);
+      addToast(`Exploring thesis: ${comparisons[activeItemIndex].category}`);
     }
   };
 
   const handleSelectMoment = (idx) => {
     setActiveItemIndex(idx);
-    addToast(`Switched context to ${comparisons[idx].category} (${comparisons[idx].speaker})`);
+    addToast(`Switched perspective to ${comparisons[idx].category}`);
   };
 
   const current = comparisons[activeItemIndex];
 
   return (
     <section 
-      id="during" 
+      id="problem" 
       ref={containerRef} 
       className="py-24 md:py-32 bg-[#F8F7F2] border-b border-[#E8E6DF] overflow-hidden relative"
     >
@@ -139,14 +139,14 @@ export default function DuringMeeting() {
           <div className="flex items-center gap-2 mb-3">
             <span className="w-2 h-2 rounded-full bg-[#C8E63A]" />
             <span className="text-xs font-mono uppercase tracking-widest text-[#88867F]">
-              02 &bull; In-Flight Presence
+              02 &bull; THE PROBLEM
             </span>
           </div>
           <h2 className="text-5xl sm:text-6xl lg:text-7xl font-[550] tracking-[-0.04em] text-[#171717] leading-[0.95]">
-            Stay <span className="font-serif italic font-normal">present.</span>
+            Beyond <span className="font-serif italic font-normal">generalization.</span>
           </h2>
           <p className="mt-4 text-base sm:text-lg text-[#5F5D57] leading-relaxed">
-            Stop frantically typing every sentence. Write short fragments; Cadence automatically expands and structures them with audio context in real time.
+            General intelligence may be the wrong destination. Generalization creates power. Generalization also creates distance. To generalize is to abstract.
           </p>
         </div>
 
@@ -173,7 +173,7 @@ export default function DuringMeeting() {
               <div className="flex items-center gap-2 bg-[#F8F7F2] px-3 py-1.5 rounded-xl border border-[#E8E6DF]">
                 <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
                 <span className="text-xs font-mono font-bold text-[#171717]">
-                  48kHz Local Mic Stream
+                  Cognitive Research Stream
                 </span>
               </div>
 
@@ -186,7 +186,7 @@ export default function DuringMeeting() {
                   {current.speaker}
                 </span>
                 <span className="text-[10px] text-emerald-700 font-mono font-medium hidden sm:inline">
-                  (Speaking)
+                  (Active Focus)
                 </span>
               </div>
             </div>
@@ -211,7 +211,7 @@ export default function DuringMeeting() {
                   />
                 ))}
                 <span className="ml-2 text-xs font-mono font-semibold text-[#171717]">
-                  14:{playbackTime < 10 ? `0${playbackTime}` : playbackTime}
+                  Loop #{playbackTime}
                 </span>
               </div>
 
@@ -219,11 +219,11 @@ export default function DuringMeeting() {
               <div className="flex items-center gap-2 text-xs font-mono">
                 <span className="flex items-center gap-1.5 text-emerald-800 font-medium bg-emerald-50 px-2.5 py-1 rounded-lg border border-emerald-200">
                   <ShieldCheck className="w-3.5 h-3.5 text-emerald-600" />
-                  <span className="hidden sm:inline">No Bot In Meeting</span>
+                  <span className="hidden sm:inline">Individualized</span>
                 </span>
                 <span className="flex items-center gap-1 text-[#88867F] bg-[#FAF9F5] px-2.5 py-1 rounded-lg border border-[#DCDAD2]">
                   <Zap className="w-3 h-3 text-amber-500" />
-                  <span>12ms Latency</span>
+                  <span>Zero Distance</span>
                 </span>
               </div>
             </div>
@@ -296,18 +296,18 @@ export default function DuringMeeting() {
                   <div className="flex items-center gap-2">
                     <div className="w-2.5 h-2.5 rounded-full bg-amber-500" />
                     <span className="text-xs font-mono uppercase text-amber-950 font-bold bg-amber-50 px-2.5 py-0.5 rounded-full border border-amber-200">
-                      What You Typed
+                      The AGI Dilemma
                     </span>
                   </div>
                   <span className="text-[10px] font-mono text-[#88867F] bg-[#FAF9F5] px-2.5 py-1 rounded-md border border-[#DCDAD2] flex items-center gap-1">
                     <FileText className="w-3 h-3 text-[#88867F]" />
-                    In-Flight Scratchpad
+                    Research Inquiry
                   </span>
                 </div>
 
                 {/* Micro Subheading */}
                 <p className="text-xs text-[#5F5D57] mb-4">
-                  Type quick 3-word fragments during conversation. Click any note to see real-time synthesis:
+                  Broad capability alone does not answer what kind of intelligence should exist inside such systems:
                 </p>
 
                 {/* Selectable Jotted Fragments */}
@@ -439,7 +439,7 @@ export default function DuringMeeting() {
                     <div className="p-4 rounded-2xl bg-gradient-to-br from-[#FAFDF0] to-white border border-[#C8E63A]/80 space-y-1.5 shadow-xs">
                       <span className="text-[10px] font-mono text-[#5F5D57] uppercase tracking-wider font-semibold flex items-center gap-1.5">
                         <Sparkles className="w-3.5 h-3.5 text-[#8CB800]" />
-                        Real-Time Executive Expansion
+                        Knull Directional Thesis
                       </span>
                       <p className="text-xs sm:text-sm text-[#171717] leading-relaxed font-sans font-medium">
                         {current.enhanced}
@@ -449,7 +449,7 @@ export default function DuringMeeting() {
                     {/* Agreed Decision */}
                     <div className="p-3 rounded-xl bg-[#FAF9F5] border border-[#E8E6DF] space-y-1 text-xs">
                       <span className="text-[10px] font-mono text-emerald-700 font-bold uppercase tracking-wider block">
-                        Agreed Decision:
+                        Core Finding:
                       </span>
                       <p className="text-[#171717] font-medium leading-snug">
                         {current.decision}
@@ -486,9 +486,9 @@ export default function DuringMeeting() {
               <div className="pt-4 mt-6 border-t border-[#E8E6DF] flex items-center justify-between text-xs font-mono">
                 <span className="text-indigo-700 font-semibold flex items-center gap-1">
                   <ArrowUpRight className="w-3 h-3" />
-                  Synced: Linear &bull; Notion
+                  Knull Core Research
                 </span>
-                <span className="text-emerald-700 font-bold">100% Verbatim Match</span>
+                <span className="text-emerald-700 font-bold">100% Context Fidelity</span>
               </div>
             </div>
           </motion.div>

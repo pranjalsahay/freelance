@@ -4,12 +4,12 @@ import { ArrowRight, Command, Menu, X, LayoutGrid } from 'lucide-react';
 import { smoothScrollTo } from '../utils/scroll';
 
 const NAV_ITEMS = [
-  { id: 'product', label: 'Product' },
-  { id: 'before', label: 'Before' },
-  { id: 'during', label: 'During' },
-  { id: 'after', label: 'After' },
-  { id: 'memory', label: 'Memory' },
-  { id: 'pricing', label: 'Pricing' },
+  { id: 'problem', label: 'The Problem' },
+  { id: 'idea', label: 'The Idea' },
+  { id: 'vision', label: 'The Vision' },
+  { id: 'individuals', label: 'Artificial Individuals' },
+  { id: 'applications', label: 'Applications' },
+  { id: 'people', label: 'People' },
 ];
 
 export default function Navbar({ onOpenCommandPalette, onOpenWorkspace }) {
@@ -72,7 +72,7 @@ export default function Navbar({ onOpenCommandPalette, onOpenWorkspace }) {
             </svg>
           </div>
           <span className="font-semibold tracking-[-0.02em] text-base sm:text-lg text-[#171717]">
-            Cadence
+            Knull
           </span>
         </a>
 
@@ -137,16 +137,16 @@ export default function Navbar({ onOpenCommandPalette, onOpenWorkspace }) {
             className="hidden md:flex items-center gap-1.5 text-xs font-medium text-[#171717] bg-white/70 hover:bg-[#F1F0EA] border border-[#DCDAD2] px-3.5 py-1.5 rounded-full transition-all cursor-pointer hover:shadow-xs"
           >
             <LayoutGrid className="w-3.5 h-3.5" />
-            <span>Workspace</span>
+            <span>Research</span>
           </button>
 
-          {/* Primary CTA button with Cadence Lime Accent */}
+          {/* Primary CTA button with Accent */}
           <a
-            href="#pricing"
-            onClick={(e) => handleNavClick(e, '#pricing')}
+            href="#vision"
+            onClick={(e) => handleNavClick(e, '#vision')}
             className="group inline-flex items-center gap-1.5 bg-[#C8E63A] text-[#171717] text-xs sm:text-sm font-semibold px-4 sm:px-5 py-2 rounded-full hover:bg-[#B8D62E] transition-all transform hover:-translate-y-0.5 shadow-xs cursor-pointer"
           >
-            <span>Get started</span>
+            <span>Explore Knull</span>
             <ArrowRight className="w-3.5 h-3.5 transition-transform duration-200 group-hover:translate-x-1" />
           </a>
 
@@ -192,7 +192,7 @@ export default function Navbar({ onOpenCommandPalette, onOpenWorkspace }) {
                 }}
                 className="w-full text-left p-2.5 font-medium text-[#171717] hover:bg-[#F1F0EA] rounded-xl cursor-pointer flex items-center justify-between"
               >
-                <span>Open Live Workspace</span>
+                <span>Explore Research Space</span>
                 <LayoutGrid className="w-4 h-4 text-[#5F5D57]" />
               </button>
               <button

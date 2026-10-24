@@ -9,48 +9,48 @@ export default function Pricing({ onOpenWorkspace }) {
 
   const plans = [
     {
-      name: "Free",
-      tagline: "For individual builders exploring meeting clarity.",
+      name: "Researcher",
+      tagline: "For individual builders exploring non-generalized intelligence.",
       priceMonthly: 0,
       priceAnnual: 0,
       features: [
-        "Unlimited local 48kHz audio capture",
-        "30 AI note enhancements / month",
-        "macOS & Windows desktop app",
-        "Markdown & plain text export",
-        "Zero bots in your meetings",
+        "Single artificial individual instance",
+        "Context & objective grounding engine",
+        "Persistent local memory vault",
+        "Continuous feedback loop telemetry",
+        "Zero model training on your data",
       ],
-      cta: "Download Free App",
+      cta: "Explore Free",
       popular: false,
     },
     {
-      name: "Pro",
-      tagline: "For operators in back-to-back high-stakes calls.",
-      priceMonthly: 20,
-      priceAnnual: 16,
+      name: "Autonomous",
+      tagline: "For operators deploying individuals in dynamic environments.",
+      priceMonthly: 24,
+      priceAnnual: 19,
       features: [
-        "Unlimited AI meeting notes & transcripts",
-        "Pre-meeting briefing dossier",
-        "Cross-meeting AI memory & semantic search",
+        "Unlimited individual cognitive instances",
+        "Persistent cross-environment memory",
+        "Real-time adaptation & behavioral loops",
         "Two-way sync with Linear, Notion, & Slack",
-        "Priority Claude 3.5 & GPT-4o inference",
+        "Dedicated isolated memory vaults",
       ],
       cta: "Start 14-Day Free Trial",
       popular: true,
     },
     {
-      name: "Team",
-      tagline: "For collaborative squads sharing organizational memory.",
-      priceMonthly: 38,
-      priceAnnual: 30,
+      name: "Enterprise Mesh",
+      tagline: "For teams deploying specialized artificial individuals at scale.",
+      priceMonthly: 45,
+      priceAnnual: 36,
       features: [
-        "Everything in Pro, plus:",
-        "Shared organizational knowledge graph",
-        "Team meeting templates & repositories",
-        "Automated team action item delegation",
-        "Admin user management & seat billing",
+        "Everything in Autonomous, plus:",
+        "Shared organizational experience graph",
+        "Cryptographic environment boundary lock",
+        "Air-gapped and on-premise deployment",
+        "Dedicated research engineering support",
       ],
-      cta: "Create Team Workspace",
+      cta: "Deploy Enterprise Mesh",
       popular: false,
     },
   ];
@@ -62,13 +62,13 @@ export default function Pricing({ onOpenWorkspace }) {
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-14">
           <span className="text-xs font-mono uppercase tracking-widest text-[#88867F] block mb-3">
-            Predictable Plans
+            DEPLOYMENT TIERS
           </span>
           <h2 className="text-4xl sm:text-6xl font-[550] tracking-tight text-[#171717]">
-            Simple pricing for serious teams.
+            Accessible plans for serious research.
           </h2>
           <p className="mt-4 text-base text-[#5F5D57]">
-            Start free without a credit card. Upgrade when you need continuous cross-meeting intelligence.
+            Start free without a credit card. Scale when you need continuous environmental adaptation and persistent memory.
           </p>
 
           {/* Billing Switcher with Fluid layoutId Pill */}

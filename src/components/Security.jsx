@@ -207,7 +207,7 @@ export default function Security() {
             >
               <span className="w-2 h-2 rounded-full bg-[#C8E63A]" />
               <span className="text-xs font-mono uppercase tracking-widest text-[#66635D]">
-                PRIVACY &bull; BY DESIGN
+                SOVEREIGNTY &bull; BY DESIGN
               </span>
             </motion.div>
 
@@ -220,7 +220,7 @@ export default function Security() {
                   transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
                   className="text-5xl sm:text-6xl font-[550] tracking-[-0.035em] text-[#111111] leading-[0.96]"
                 >
-                  Your conversations
+                  Your intelligence
                 </motion.h2>
               </div>
 
@@ -231,7 +231,7 @@ export default function Security() {
                   transition={{ duration: 0.8, delay: 0.12, ease: [0.22, 1, 0.36, 1] }}
                   className="text-5xl sm:text-6xl font-serif italic font-normal text-[#111111] leading-[0.96]"
                 >
-                  stay yours.
+                  stays sovereign.
                 </motion.div>
               </div>
             </div>
@@ -243,7 +243,7 @@ export default function Security() {
               transition={{ duration: 0.6, delay: 0.25, ease: [0.22, 1, 0.36, 1] }}
               className="text-base sm:text-lg text-[#66635D] leading-relaxed max-w-lg"
             >
-              We built Cadence knowing that your meetings contain your company's most sensitive discussions, strategies, and trade secrets.
+              We built Knull knowing that an artificial individual develops proprietary experience, strategy, and understanding that must remain inside an isolated boundary.
             </motion.p>
 
             {/* Live Boundary Reassurance Pill */}
@@ -476,10 +476,10 @@ export default function Security() {
 
                   {/* Brand & Memory Title */}
                   <h3 className="text-xs font-bold tracking-[0.22em] uppercase font-sans text-white">
-                    CADENCE
+                    KNULL
                   </h3>
                   <span className="text-[11px] font-mono text-[#88867F] mt-0.5">
-                    MEMORY CORE
+                    COGNITIVE VAULT
                   </span>
 
                   {/* Status Indicator */}
@@ -495,7 +495,7 @@ export default function Security() {
 
                   {/* Subtitle tag */}
                   <span className="text-[9px] font-mono text-[#66635D] mt-2 block uppercase tracking-wider">
-                    Private by default
+                    Sovereign by default
                   </span>
                 </motion.div>
               </motion.div>

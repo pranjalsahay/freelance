@@ -22,10 +22,10 @@ export default function AfterMeeting() {
   const sandboxY = useTransform(scrollYProgress, [0, 1], [25, -25]);
 
   const rawBullets = [
-    "pricing concern raised by Alex",
-    "timeline delayed by 2 weeks",
-    "Frankfurt EU hosting mandatory",
-    "talk to Alex by Friday on wireframes",
+    "Mission: To build machines that understand more than instructions.",
+    "Approach: Understand. Adapt. Act. Learn.",
+    "Interaction: A continuous loop rather than a single interaction.",
+    "Proprietary: Long-term advantage is accumulated experience in reality.",
   ];
 
   const handleEnhance = () => {
@@ -34,19 +34,19 @@ export default function AfterMeeting() {
 
     setTimeout(() => {
       setAnimatingStep(2);
-      addToast('Notes synthesized into executive decisions');
+      addToast('Synthesized Knull research vision pillars');
     }, 1200);
   };
 
   const handleCopy = () => {
     setCopied(true);
-    navigator.clipboard?.writeText("Frankfurt AWS cluster approved. General launch locked for Nov 14th.");
-    addToast('Structured meeting notes copied');
+    navigator.clipboard?.writeText("To build machines that understand more than instructions. Understand. Adapt. Act. Learn.");
+    addToast('Vision architecture copied');
     setTimeout(() => setCopied(false), 2000);
   };
 
   return (
-    <section id="after" ref={containerRef} className="py-28 md:py-36 bg-[#F8F7F2] border-b border-[#E8E6DF] overflow-hidden relative">
+    <section id="vision" ref={containerRef} className="py-28 md:py-36 bg-[#F8F7F2] border-b border-[#E8E6DF] overflow-hidden relative">
       {/* Subtle ambient lighting */}
       <div className="absolute top-1/3 left-1/4 w-80 h-80 bg-violet-400/5 rounded-full filter blur-[100px] pointer-events-none" />
       <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-[#C8E63A]/10 rounded-full filter blur-[100px] pointer-events-none" />
@@ -58,14 +58,14 @@ export default function AfterMeeting() {
           <div className="flex items-center gap-2 mb-3">
             <span className="w-2 h-2 rounded-full bg-[#C8E63A]" />
             <span className="text-xs font-mono uppercase tracking-widest text-[#88867F]">
-              03 &bull; Post-Meeting Execution
+              03 &bull; THE VISION
             </span>
           </div>
           <h2 className="text-5xl sm:text-6xl lg:text-7xl font-[550] tracking-[-0.04em] text-[#171717] leading-[0.95]">
-            Leave with <span className="font-serif italic font-normal">clarity.</span>
+            Building beyond <span className="font-serif italic font-normal">generalization.</span>
           </h2>
           <p className="mt-4 text-base sm:text-lg text-[#5F5D57] leading-relaxed">
-            The moment you hang up, Cadence extracts structured summaries, decisions, assigned owners, and deadlines. No 20-minute recap writing needed.
+            To build machines that understand more than instructions. A continuous loop rather than a single interaction. Long-term advantage is not the interface; it is the accumulated experience of systems in reality.
           </p>
         </div>
 
@@ -91,18 +91,18 @@ export default function AfterMeeting() {
               </div>
               <div>
                 <span className="text-[10px] font-mono uppercase text-violet-700 font-semibold bg-violet-50 px-2 py-0.5 rounded-full border border-violet-200">
-                  Interactive Sandbox
+                  Interactive Vision Architecture
                 </span>
-                <h3 className="text-xl font-[550] text-[#171717]">Try the Cadence AI Note Enhancer</h3>
+                <h3 className="text-xl font-[550] text-[#171717]">Knull Foundational Pillars</h3>
               </div>
             </div>
 
             {/* Template Selector Chips */}
             <div className="flex items-center gap-1.5 bg-[#F8F7F2] p-1 rounded-full border border-[#DCDAD2] text-xs font-mono">
               {[
-                { id: 'executive', label: 'Executive' },
-                { id: 'prd', label: 'Linear PRD' },
-                { id: 'sales', label: 'Sales CRM' },
+                { id: 'executive', label: 'Mission' },
+                { id: 'prd', label: 'Approach' },
+                { id: 'sales', label: 'Proprietary' },
               ].map((fmt) => (
                 <button
                   key={fmt.id}
@@ -131,10 +131,10 @@ export default function AfterMeeting() {
             >
               <div className="flex items-center justify-between">
                 <span className="font-mono text-xs uppercase text-amber-800 font-semibold bg-amber-50 px-2.5 py-0.5 rounded-full border border-amber-200">
-                  Raw Scratchpad Input
+                  Core Axioms
                 </span>
                 <span className="text-[10px] font-mono bg-white text-[#5F5D57] px-2 py-0.5 rounded border border-[#DCDAD2]">
-                  4 Fragments
+                  4 Principles
                 </span>
               </div>
               <ul className="space-y-2.5 text-xs text-[#171717] font-mono leading-relaxed">
@@ -146,7 +146,7 @@ export default function AfterMeeting() {
                 ))}
               </ul>
               <div className="text-[11px] text-[#88867F] font-mono">
-                Typed during the conversation with zero formatting.
+                Foundational thesis for machine intelligence beyond generalization.
               </div>
             </motion.div>
 
@@ -176,12 +176,12 @@ export default function AfterMeeting() {
                 ) : (
                   <>
                     <Sparkles className="w-3.5 h-3.5" />
-                    <span>Enhance notes</span>
+                    <span>Synthesize vision</span>
                   </>
                 )}
               </motion.button>
               <span className="text-[10px] font-mono text-[#88867F] text-center">
-                Uses contextual audio
+                Operational reality loop
               </span>
             </div>
 
@@ -195,14 +195,14 @@ export default function AfterMeeting() {
                 <div className="flex items-center justify-between mb-3">
                   <span className="font-mono text-xs uppercase text-emerald-800 font-semibold bg-emerald-50 px-2.5 py-0.5 rounded-full border border-emerald-200 flex items-center gap-1.5">
                     <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-                    Structured Meeting Output
+                    Knull Research Blueprint
                   </span>
                   {animatingStep === 2 && (
                     <button
                       onClick={handleCopy}
                       className="text-[10px] font-mono text-emerald-700 hover:text-emerald-900 bg-white border border-emerald-200 px-2.5 py-1 rounded-full transition-colors cursor-pointer shadow-xs"
                     >
-                      {copied ? 'Copied ✓' : 'Copy Spec'}
+                      {copied ? 'Copied ✓' : 'Copy'}
                     </button>
                   )}
                 </div>
@@ -217,41 +217,34 @@ export default function AfterMeeting() {
                       transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
                       className="space-y-3 text-xs"
                     >
-                      {/* Executive Summary in Violet Card */}
+                      {/* Mission Card */}
                       <div className="p-3.5 bg-white rounded-xl border border-violet-100 space-y-1 shadow-xs">
                         <span className="text-[10px] font-mono text-violet-700 uppercase font-semibold">
-                          Executive Synthesis
+                          Mission
                         </span>
                         <p className="text-[#171717] leading-relaxed">
-                          Alex raised pricing sensitivity for 450 engineers. <span className="lime-highlight font-medium">Frankfurt AWS hosting</span> remains a firm prerequisite before procurement sign-off.
+                          To build machines that understand <span className="lime-highlight font-medium">more than instructions</span>.
                         </p>
                       </div>
 
-                      {/* Agreed Decision in Emerald Card */}
+                      {/* Approach Card */}
                       <div className="p-3.5 bg-white rounded-xl border border-emerald-100 space-y-1 shadow-xs">
                         <span className="text-[10px] font-mono text-emerald-700 uppercase font-semibold">
-                          Agreed Decision
+                          Approach
                         </span>
                         <p className="text-[#171717] font-medium leading-relaxed">
-                          Rollout shifted by 2 weeks to November 14th to allow SOC-2 and Frankfurt deployment completion.
+                          Understand. Adapt. Act. Learn. A continuous loop rather than a single interaction.
                         </p>
                       </div>
 
-                      {/* Assigned Tasks with Colored Chips */}
-                      <div className="space-y-1.5">
-                        <span className="text-[10px] font-mono text-[#88867F] uppercase">Assigned Tasks (2)</span>
-                        <div className="flex items-center justify-between p-2.5 bg-white rounded-lg border border-[#E8E6DF] text-[11px] shadow-xs">
-                          <span className="font-medium text-[#171717]">Deliver updated onboarding wireframes</span>
-                          <span className="text-indigo-700 bg-indigo-50 border border-indigo-200 font-mono px-1.5 py-0.5 rounded text-[10px]">
-                            Alex &bull; Friday
-                          </span>
-                        </div>
-                        <div className="flex items-center justify-between p-2.5 bg-white rounded-lg border border-[#E8E6DF] text-[11px] shadow-xs">
-                          <span className="font-medium text-[#171717]">Send Frankfurt AWS architecture</span>
-                          <span className="text-emerald-700 bg-emerald-50 border border-emerald-200 font-mono px-1.5 py-0.5 rounded text-[10px]">
-                            Sarah &bull; Monday
-                          </span>
-                        </div>
+                      {/* Proprietary Card */}
+                      <div className="p-3.5 bg-white rounded-xl border border-amber-100 space-y-1 shadow-xs">
+                        <span className="text-[10px] font-mono text-amber-700 uppercase font-semibold">
+                          Proprietary Advantage
+                        </span>
+                        <p className="text-[#171717] font-medium leading-relaxed">
+                          Long-term advantage is not the interface. It is the accumulated experience of systems in reality.
+                        </p>
                       </div>
                     </motion.div>
                   ) : (
@@ -263,16 +256,16 @@ export default function AfterMeeting() {
                       className="flex flex-col items-center justify-center py-14 text-center text-[#88867F] text-xs"
                     >
                       <Sparkles className="w-8 h-8 text-[#C8E63A] mb-3 animate-pulse" />
-                      <span className="max-w-xs">Click &ldquo;Enhance notes&rdquo; to transform raw bullets into executive decisions and action items.</span>
+                      <span className="max-w-xs">Click &ldquo;Synthesize vision&rdquo; to explore the foundational pillars of intelligence beyond generalization.</span>
                     </motion.div>
                   )}
                 </AnimatePresence>
               </div>
 
               <div className="pt-3 border-t border-[#E8E6DF] text-[10px] font-mono flex items-center justify-between">
-                <span className="text-indigo-700 font-medium">Output: Markdown &bull; Slack &bull; Linear &bull; Notion</span>
+                <span className="text-indigo-700 font-medium">Loop: Understand &bull; Adapt &bull; Act &bull; Learn</span>
                 <span className="text-emerald-700 font-semibold bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">
-                  Ready to Push
+                  Continuous Loop
                 </span>
               </div>
             </motion.div>

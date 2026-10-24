@@ -40,7 +40,7 @@ export default function BeforeMeeting() {
   }, [isInView]);
 
   return (
-    <section id="before" ref={containerRef} className="py-28 md:py-36 bg-[#F8F7F2] border-b border-[#E8E6DF] overflow-hidden relative">
+    <section id="idea" ref={containerRef} className="py-28 md:py-36 bg-[#F8F7F2] border-b border-[#E8E6DF] overflow-hidden relative">
       {/* Subtle ambient colored lighting in the background */}
       <div className="absolute top-1/4 left-1/10 w-96 h-96 bg-blue-400/5 rounded-full filter blur-[100px] pointer-events-none" />
       <div className="absolute bottom-1/4 right-1/10 w-96 h-96 bg-[#C8E63A]/10 rounded-full filter blur-[120px] pointer-events-none" />
@@ -52,14 +52,14 @@ export default function BeforeMeeting() {
           <div className="flex items-center gap-2 mb-3">
             <span className="w-2 h-2 rounded-full bg-[#C8E63A]" />
             <span className="text-xs font-mono uppercase tracking-widest text-[#88867F]">
-              01 &bull; Pre-Meeting Intelligence
+              01 &bull; THE IDEA
             </span>
           </div>
           <h2 className="text-5xl sm:text-6xl lg:text-7xl font-[550] tracking-[-0.04em] text-[#171717] leading-[0.95]">
-            Walk in <span className="font-serif italic font-normal">prepared.</span>
+            Intelligence is <span className="font-serif italic font-normal">contextual.</span>
           </h2>
           <p className="mt-4 text-base sm:text-lg text-[#5F5D57] leading-relaxed">
-            Everything you need before the conversation starts. Cadence combs prior notes, emails, and CRM context to brief you in 30 seconds.
+            Human intelligence is never truly detached from the individual using it. What someone knows, what they have experienced, what they are trying to achieve, what surrounds them and what happens after they act all influence the way they think.
           </p>
         </div>
 
@@ -71,7 +71,7 @@ export default function BeforeMeeting() {
             style={{ y: leftCardsY }}
             className="lg:col-span-7 space-y-3 relative perspective-[1200px]"
           >
-            {/* Card 1: Calendar Context (z-30, tilted left) */}
+            {/* Card 1: Context & Objectives (z-30, tilted left) */}
             <motion.div
               style={{ rotate: card1Tilt }}
               whileHover={{ zIndex: 40, rotate: 0, scale: 1.02, y: -4, transition: { duration: 0.2 } }}
@@ -82,25 +82,25 @@ export default function BeforeMeeting() {
             >
               <div className="flex items-center justify-between pb-3 border-b border-[#E8E6DF] mb-4">
                 <span className="text-xs font-mono text-blue-700 font-semibold uppercase bg-blue-50 px-2.5 py-1 rounded-full border border-blue-200">
-                  Calendar Context &bull; Next up
+                  Context &bull; What Someone Knows
                 </span>
                 <span className="px-2.5 py-1 rounded-full bg-blue-600 text-white text-xs font-mono font-medium shadow-xs">
-                  Starts in 12m
+                  Fundamental
                 </span>
               </div>
               <h3 className="text-xl font-[550] text-[#171717]">
-                Acme Corp &mdash; Quarterly Renewal &amp; Expansion
+                Context changes meaning &mdash; not just metadata
               </h3>
               <div className="flex items-center gap-2 text-xs text-[#5F5D57] mt-2 font-mono">
                 <span className="w-5 h-5 rounded-full bg-indigo-600 text-white flex items-center justify-center text-[9px] font-bold">
-                  ER
+                  CX
                 </span>
-                <span>Elena Rostova (VP Eng)</span>
+                <span>Active Objective</span>
                 <span className="text-[#88867F]">&bull;</span>
                 <span className="w-5 h-5 rounded-full bg-emerald-600 text-white flex items-center justify-center text-[9px] font-bold">
-                  DM
+                  EX
                 </span>
-                <span>David Miller (Security Lead)</span>
+                <span>Lived Experience</span>
               </div>
             </motion.div>
 
@@ -116,16 +116,16 @@ export default function BeforeMeeting() {
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-2 text-violet-900 font-semibold text-xs bg-violet-50 px-2.5 py-1 rounded-full border border-violet-200">
                   <Sparkles className="w-3.5 h-3.5 text-violet-600" />
-                  <span>Synthesized Historical Discussions</span>
+                  <span>The Breakthrough Principle</span>
                 </div>
-                <span className="text-[10px] font-mono text-[#88867F]">Sept 28 Call</span>
+                <span className="text-[10px] font-mono text-[#88867F]">Knull Philosophy</span>
               </div>
               <p className="text-xs text-[#4A4843] leading-relaxed">
-                Prior call on Sept 28th resolved API rate-limit questions. David requested written assurance regarding <strong className="text-[#171717] bg-violet-50 px-1 rounded">Frankfurt data residency</strong> before their procurement team approves the 2-year expansion.
+                The next breakthrough may not come from making intelligence bigger. <strong className="text-[#171717] bg-violet-50 px-1 rounded">It may come from making intelligence different.</strong>
               </p>
             </motion.div>
 
-            {/* Card 3: Open Questions for You (z-10, tilted left) */}
+            {/* Card 3: Reality & Consequence (z-10, tilted left) */}
             <motion.div
               style={{ rotate: card3Tilt }}
               whileHover={{ zIndex: 40, rotate: 0, scale: 1.02, y: -4, transition: { duration: 0.2 } }}
@@ -137,20 +137,20 @@ export default function BeforeMeeting() {
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-2 text-amber-900 font-semibold text-xs bg-amber-50 px-2.5 py-1 rounded-full border border-amber-200">
                   <AlertCircle className="w-3.5 h-3.5 text-amber-600" />
-                  <span>Recommended Open Questions for You</span>
+                  <span>Behaviour &amp; Environment</span>
                 </div>
                 <span className="text-[10px] font-mono text-amber-700 bg-amber-100/60 px-2 py-0.5 rounded-full">
-                  High Priority
+                  Continuous Feedback
                 </span>
               </div>
               <ul className="text-xs text-[#5F5D57] space-y-1.5 list-disc list-inside">
-                <li>Did legal approve the GDPR EU hosting clause?</li>
-                <li>Will their engineering team need dedicated Okta SCIM provisioning?</li>
+                <li>What surrounds the system dictates operational relevance</li>
+                <li>What happens after action informs future cognitive pathways</li>
               </ul>
             </motion.div>
           </motion.div>
 
-          {/* RIGHT: Cadence Brief Gauge & Preparation Score */}
+          {/* RIGHT: Knull Cognitive Gauge */}
           <motion.div
             style={{ y: rightGaugeY }}
             initial={{ opacity: 0, y: 25 }}
@@ -164,7 +164,7 @@ export default function BeforeMeeting() {
             <div className="relative z-10">
               <div className="flex items-center justify-between mb-2">
                 <span className="text-xs font-mono uppercase tracking-wider text-[#88867F]">
-                  Cadence Brief
+                  Cognitive Synthesis
                 </span>
                 <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse" />
               </div>
@@ -175,12 +175,12 @@ export default function BeforeMeeting() {
                   {score}%
                 </span>
                 <span className="text-xs font-mono text-emerald-800 bg-emerald-50 px-2.5 py-1 rounded-full font-semibold uppercase border border-emerald-200">
-                  Briefing Ready
+                  Contextual Grounding
                 </span>
               </div>
 
               <p className="text-xs text-[#5F5D57] leading-relaxed mb-6">
-                Synthesized across 4 prior calls, 12 emails, and your shared Notion technical document.
+                Intelligence developed around context, objectives, experience and behaviour rather than broad abstract generalization.
               </p>
 
               {/* Progress bar with Gradient Lime-Emerald */}
@@ -197,23 +197,23 @@ export default function BeforeMeeting() {
               <div className="space-y-2.5 text-xs font-medium text-[#171717]">
                 <div className="flex items-center gap-2.5 p-2 rounded-xl bg-emerald-50/50 border border-emerald-100">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                  <span>Executive relationship history verified</span>
+                  <span>Objective-driven reasoning active</span>
                 </div>
                 <div className="flex items-center gap-2.5 p-2 rounded-xl bg-blue-50/50 border border-blue-100">
                   <CheckCircle2 className="w-4 h-4 text-blue-600 shrink-0" />
-                  <span>Objections &amp; pricing guardrails loaded</span>
+                  <span>Experience incorporation online</span>
                 </div>
                 <div className="flex items-center gap-2.5 p-2 rounded-xl bg-[#FAFDF0] border border-[#C8E63A]/40">
                   <CheckCircle2 className="w-4 h-4 text-[#171717] shrink-0" />
-                  <span>Meeting agenda pre-populated</span>
+                  <span>Non-generalized contextual boundary</span>
                 </div>
               </div>
             </div>
 
             <div className="pt-6 border-t border-[#E8E6DF] flex items-center justify-between text-xs font-mono relative z-10">
-              <span className="text-[#88867F]">Zero pre-meeting panic</span>
+              <span className="text-[#88867F]">Detached generalization: 0%</span>
               <span className="text-emerald-700 font-semibold bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">
-                100% Prepared
+                100% Contextual
               </span>
             </div>
           </motion.div>

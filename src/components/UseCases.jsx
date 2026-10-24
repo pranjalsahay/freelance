@@ -6,96 +6,96 @@ export default function UseCases() {
   const [activeTab, setActiveTab] = useState('sales');
 
   const tabs = [
-    { id: 'sales', label: 'Sales & Revenue', icon: Briefcase, color: 'text-emerald-400' },
-    { id: 'product', label: 'Product & Design', icon: Compass, color: 'text-blue-400' },
-    { id: 'engineering', label: 'Engineering', icon: Code, color: 'text-violet-400' },
-    { id: 'recruiting', label: 'Recruiting', icon: UserCheck, color: 'text-amber-400' },
-    { id: 'leadership', label: 'Leadership', icon: Shield, color: 'text-indigo-400' },
+    { id: 'science', label: 'Scientific Discovery', icon: Compass, color: 'text-emerald-400' },
+    { id: 'systems', label: 'Complex Systems', icon: Code, color: 'text-blue-400' },
+    { id: 'governance', label: 'Strategic Governance', icon: Briefcase, color: 'text-violet-400' },
+    { id: 'autonomous', label: 'Autonomous Agents', icon: Shield, color: 'text-amber-400' },
+    { id: 'interaction', label: 'Human Interaction', icon: UserCheck, color: 'text-indigo-400' },
   ];
 
   const contentMap = {
-    sales: {
-      headline: "Capture prospect pain points and push structured CRM updates in seconds.",
-      tag: "Revenue Operations",
+    science: {
+      headline: "Ground intelligence in empirical context and scientific hypotheses.",
+      tag: "Autonomous Research",
       badgeColor: "bg-emerald-50 text-emerald-800 border-emerald-200",
       metricBadge: "bg-emerald-50 text-emerald-800 border-emerald-200",
       bullets: [
-        "Identifies budget, authority, need, and timeline (BANT) signals automatically.",
-        "Logs call highlights, commitments, and objections directly into Salesforce or HubSpot.",
-        "Drafts personalized follow-up emails highlighting the customer's exact words.",
+        "Contextualizes empirical findings against domain-specific historical observations.",
+        "Identifies unexpected variance rather than smoothing it into generalized abstractions.",
+        "Formulates hypothesis iterations based on continuous experimental loops.",
       ],
-      metric: "3.5 hrs saved per rep weekly",
-      metricSub: "Measured across 250 enterprise quota carriers.",
+      metric: "Zero detached assumptions",
+      metricSub: "100% grounded in experimental reality.",
     },
-    product: {
-      headline: "Transform user interviews into actionable feature specs and bug reports.",
-      tag: "Product Discovery",
+    systems: {
+      headline: "Preserve operational architecture context across complex engineering domains.",
+      tag: "Systems Architecture",
       badgeColor: "bg-blue-50 text-blue-800 border-blue-200",
       metricBadge: "bg-blue-50 text-blue-800 border-blue-200",
       bullets: [
-        "Synthesizes recurring user friction across 20+ qualitative interviews.",
-        "Auto-extracts verbatim customer quotes for user journey mapping and PRDs.",
-        "Generates initial feature problem statements directly for Linear or Jira.",
+        "Understands why historical constraints exist within active system topography.",
+        "Adapts to architectural reality shifts rather than following static instructions.",
+        "Prevents rediscovery of resolved edge cases and structural trade-offs.",
       ],
-      metric: "Zero lost user insights",
-      metricSub: "100% customer feedback mapped to active backlog.",
+      metric: "100% context retention",
+      metricSub: "Eliminates repeated exploration of solved problems.",
     },
-    engineering: {
-      headline: "Preserve technical architecture decisions without taking engineers out of flow.",
-      tag: "Technical Architecture",
+    governance: {
+      headline: "Align high-stakes decisions with institutional memory and objective context.",
+      tag: "Strategic Governance",
       badgeColor: "bg-violet-50 text-violet-800 border-violet-200",
       metricBadge: "bg-violet-50 text-violet-800 border-violet-200",
       bullets: [
-        "Documents tradeoffs discussed during sprint planning and RFC debates.",
-        "Auto-tags assigned engineers, blockers, and dependencies in issue trackers.",
-        "Retains exact technical reasoning behind complex infrastructure pivots.",
+        "Evaluates strategic options against accumulated organizational experience.",
+        "Tracks goal alignment and objective drift across multi-horizon initiatives.",
+        "Preserves the institutional memory of how critical decisions were shaped.",
       ],
-      metric: "100% RFC clarity",
-      metricSub: "Eliminates repeated debates on past technical decisions.",
+      metric: "Total objective alignment",
+      metricSub: "Unbroken institutional memory across decision cycles.",
     },
-    recruiting: {
-      headline: "Conduct candid candidate evaluations while maintaining structured records.",
-      tag: "Talent Acquisition",
+    autonomous: {
+      headline: "Deploy artificial individuals with persistent memory and environmental awareness.",
+      tag: "Agentic Systems",
       badgeColor: "bg-amber-50 text-amber-800 border-amber-200",
       metricBadge: "bg-amber-50 text-amber-800 border-amber-200",
       bullets: [
-        "Scores interview competencies objectively against role scorecards.",
-        "Summarizes strengths, weaknesses, and potential red flags without bias.",
-        "Syncs debrief notes directly into Greenhouse, Lever, or Ashby.",
+        "Operates with continuous memory rather than stateless prompt-response.",
+        "Different environments produce tailored intelligence suited for specific goals.",
+        "Incorporates live telemetry to act and learn within dynamic operational loops.",
       ],
-      metric: "40% faster hiring decisions",
-      metricSub: "Hiring managers reach consensus in single debrief session.",
+      metric: "Persistent operational loop",
+      metricSub: "Zero context loss across continuous deployment.",
     },
-    leadership: {
-      headline: "Maintain accountability across cross-functional leadership syncs.",
-      tag: "Executive Governance",
+    interaction: {
+      headline: "Develop systems that understand human behaviour and individual nuance.",
+      tag: "Adaptive Interaction",
       badgeColor: "bg-indigo-50 text-indigo-800 border-indigo-200",
       metricBadge: "bg-indigo-50 text-indigo-800 border-indigo-200",
       bullets: [
-        "Tracks commitments made across executive committee meetings.",
-        "Creates board meeting summaries and investor update bullet points instantly.",
-        "Preserves the institutional memory of how critical company decisions were made.",
+        "Human intelligence is never truly detached from the individual using it.",
+        "Adapts to individual working styles, experience levels, and current objectives.",
+        "Builds collaboration around context rather than generic instructions.",
       ],
-      metric: "Total executive alignment",
-      metricSub: "Zero dropped commitments between board meetings.",
+      metric: "Nuanced individual fit",
+      metricSub: "Tailored intelligence designed around human behaviour.",
     },
   };
 
-  const current = contentMap[activeTab];
+  const current = contentMap[activeTab] || contentMap.science;
 
   return (
-    <section className="py-28 md:py-36 bg-white border-b border-[#E8E6DF] relative overflow-hidden">
+    <section id="applications" className="py-28 md:py-36 bg-white border-b border-[#E8E6DF] relative overflow-hidden">
       <div className="max-w-[1240px] mx-auto px-6">
         
         <div className="max-w-2xl mb-14 text-left">
           <div className="flex items-center gap-2 mb-3">
             <span className="w-2 h-2 rounded-full bg-[#C8E63A]" />
             <span className="text-xs font-mono uppercase tracking-widest text-[#88867F]">
-              Tailored For Teams
+              APPLICATIONS
             </span>
           </div>
           <h2 className="text-4xl sm:text-5xl font-[550] tracking-tight text-[#171717]">
-            Purpose-built for every department.
+            Purpose-built for every domain.
           </h2>
         </div>
 

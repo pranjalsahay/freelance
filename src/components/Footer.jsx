@@ -4,39 +4,39 @@ import { smoothScrollTo } from '../utils/scroll';
 export default function Footer() {
   const sections = [
     {
-      title: "Product",
+      title: "Research",
       links: [
-        { label: "Features", href: "#product" },
-        { label: "Meeting Briefs", href: "#before" },
-        { label: "In-Flight Enhancement", href: "#during" },
-        { label: "Meeting Memory", href: "#memory" },
-        { label: "Pricing", href: "#pricing" },
+        { label: "The Problem", href: "#problem" },
+        { label: "The Idea", href: "#idea" },
+        { label: "The Vision", href: "#vision" },
+        { label: "Artificial Individuals", href: "#individuals" },
+        { label: "Applications", href: "#applications" },
       ],
     },
     {
-      title: "Resources",
+      title: "Pillars",
       links: [
-        { label: "Meeting Intelligence Playbook", href: "#product" },
-        { label: "Enterprise Security Dossier", href: "#product" },
-        { label: "Developer APIs", href: "#product" },
-        { label: "Changelog (v2.0)", href: "#hero" },
+        { label: "Context", href: "#individuals" },
+        { label: "Memory", href: "#individuals" },
+        { label: "Adaptation", href: "#individuals" },
+        { label: "Individuality", href: "#individuals" },
       ],
     },
     {
       title: "Company",
       links: [
-        { label: "About Cadence", href: "#hero" },
-        { label: "Manifesto", href: "#before" },
-        { label: "Careers", href: "#hero" },
-        { label: "Contact Us", href: "#pricing" },
+        { label: "About Knull", href: "#hero" },
+        { label: "Perspectives", href: "#people" },
+        { label: "Ecosystem", href: "#ecosystem" },
+        { label: "Deployment", href: "#pricing" },
       ],
     },
     {
-      title: "Trust",
+      title: "Sovereignty",
       links: [
-        { label: "Privacy Policy", href: "#" },
-        { label: "Terms of Service", href: "#" },
-        { label: "SOC-2 Type II", href: "#product" },
+        { label: "Privacy & Isolation", href: "#security" },
+        { label: "Terms of Research", href: "#" },
+        { label: "Boundary Defense", href: "#security" },
       ],
     },
   ];
@@ -67,14 +67,14 @@ export default function Footer() {
                 </svg>
               </div>
               <span className="font-semibold text-xl text-[#F8F7F2] tracking-tight">
-                Cadence
+                Knull
               </span>
             </a>
             <p className="text-xs text-[#88867F] max-w-xs leading-relaxed font-normal">
-              The calm AI workspace for every conversation. Crafted for presence, memory, and zero-friction execution.
+              Knull is building a new direction for artificial intelligence — systems designed to develop intelligence around context, objectives, experience and behaviour.
             </p>
             <div className="pt-2 text-[11px] font-mono text-[#5F5D57]">
-              San Francisco &bull; Worldwide Distributed
+              San Francisco &bull; Distributed Research Labs
             </div>
           </div>
 
@@ -104,15 +104,15 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-[#333230] flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-[#5F5D57] font-mono">
           <div>
-            &copy; 2026 Cadence Technologies Inc. All rights reserved.
+            &copy; 2026 Knull Technologies Inc. All rights reserved.
           </div>
           <div className="flex items-center gap-6">
             <span className="flex items-center gap-1.5 text-[#C8E63A]">
               <span className="w-1.5 h-1.5 rounded-full bg-[#C8E63A] animate-pulse" />
               All Systems Operational
             </span>
-            <span>Zero Third-Party Bots</span>
-            <span>AES-256 Encrypted</span>
+            <span>Zero Public Training</span>
+            <span>Sovereign Boundary</span>
           </div>
         </div>
       </div>

@@ -36,30 +36,30 @@ export default function FinalCTA({ onOpenWorkspace }) {
         className="max-w-[1240px] mx-auto px-6 relative z-10 space-y-7"
       >
         <span className="text-xs font-mono uppercase tracking-widest text-[#88867F] block">
-          Get Started with Cadence
+          EXPLORE KNULL
         </span>
 
         {/* Headline with Serif Emphasis */}
         <h2 className="text-5xl sm:text-7xl lg:text-8xl font-[550] tracking-[-0.045em] text-[#F8F7F2] leading-[0.94] max-w-4xl mx-auto">
-          Make every conversation <br className="hidden sm:inline" />
-          <span className="font-serif italic font-normal text-[#C8E63A]">useful.</span>
+          Build intelligence that <br className="hidden sm:inline" />
+          <span className="font-serif italic font-normal text-[#C8E63A]">understands.</span>
         </h2>
 
         <p className="text-lg sm:text-xl text-[#88867F] max-w-xl mx-auto font-normal leading-relaxed">
-          Capture less. Remember more. Get more done.
+          Systems designed to develop intelligence around context, objectives, experience and behaviour.
         </p>
 
         {/* Lime Primary CTA */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
           <a
-            href="#pricing"
+            href="#vision"
             onClick={(e) => {
               e.preventDefault();
-              smoothScrollTo('#pricing', -80);
+              smoothScrollTo('#vision', -80);
             }}
             className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#C8E63A] text-[#171717] px-8 py-4 rounded-full text-sm font-semibold hover:bg-[#B8D62E] transition-all transform hover:-translate-y-0.5 shadow-md group cursor-pointer"
           >
-            <span>Get started free</span>
+            <span>Explore Knull</span>
             <ArrowRight className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1" />
           </a>
 
@@ -68,18 +68,18 @@ export default function FinalCTA({ onOpenWorkspace }) {
               if (onOpenWorkspace) {
                 onOpenWorkspace('northwind');
               } else {
-                addToast('Opening enterprise demo scheduling');
+                addToast('Opening Knull research environment');
               }
             }}
             className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-transparent text-[#F8F7F2] border border-[#5F5D57] hover:border-[#F8F7F2] px-7 py-4 rounded-full text-sm font-medium transition-colors cursor-pointer"
           >
             <Sparkles className="w-4 h-4 text-[#C8E63A]" />
-            <span>Try live workspace demo</span>
+            <span>Research direction</span>
           </button>
         </div>
 
         <p className="text-xs text-[#88867F] font-mono pt-4">
-          No credit card required &bull; macOS and Windows desktop app &bull; 60-second setup
+          Context &bull; Objectives &bull; Experience &bull; Behaviour
         </p>
       </motion.div>
     </section>

@@ -307,7 +307,7 @@ export default function Integrations() {
             transition={{ duration: 0.6, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
             className="mt-5 text-base sm:text-lg text-[#68655F] leading-relaxed max-w-xl mx-auto"
           >
-            Cadence connects the tools your team already uses, bringing conversations, context and knowledge into one intelligent workspace.
+            Knull connects the environments where decisions happen, bringing conversations, context and experience into one intelligent workspace.
           </motion.p>
         </div>
 
@@ -498,7 +498,7 @@ export default function Integrations() {
 
                 {/* Brand Name */}
                 <h3 className="text-sm font-bold tracking-[0.22em] uppercase font-sans text-white">
-                  CADENCE
+                  KNULL
                 </h3>
 
                 {/* Context Layer Subtitle */}
@@ -646,7 +646,7 @@ export default function Integrations() {
               <Sparkles className="w-5 h-5 animate-pulse" />
             </div>
             <h3 className="text-sm font-bold tracking-[0.2em] uppercase font-sans text-white">
-              CADENCE
+              KNULL
             </h3>
             <span className="text-xs font-mono text-[#A3A198]">
               Context Layer

@@ -2,19 +2,19 @@ import React from 'react';
 
 export default function SocialProof() {
   const teams = [
-    { name: "Acme Corp", symbol: "ACM" },
-    { name: "Northwind", symbol: "NWD" },
-    { name: "Vertex Labs", symbol: "VTX" },
-    { name: "Alpine Horizon", symbol: "ALP" },
-    { name: "Foundry Nine", symbol: "FN9" },
-    { name: "Hyperion AI", symbol: "HYP" },
+    { name: "Context", symbol: "CTX" },
+    { name: "Objectives", symbol: "OBJ" },
+    { name: "Experience", symbol: "EXP" },
+    { name: "Behaviour", symbol: "BHV" },
+    { name: "Adaptation", symbol: "ADP" },
+    { name: "Individuality", symbol: "IND" },
   ];
 
   return (
     <section className="py-14 bg-white border-b border-[#E8E6DF]">
       <div className="max-w-[1240px] mx-auto px-6 text-center">
         <span className="text-xs font-mono uppercase tracking-widest text-[#88867F] block mb-8">
-          Built for teams who live in back-to-back conversations
+          Architected around foundational cognitive dimensions
         </span>
 
         {/* Minimalist Monochrome Logo Strip */}
@@ -33,7 +33,7 @@ export default function SocialProof() {
         </div>
         
         <span className="text-[10px] font-mono text-[#88867F] block mt-4">
-          (Sample enterprise customer portfolio for preview)
+          A continuous loop rather than a single interaction
         </span>
       </div>
     </section>

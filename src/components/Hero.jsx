@@ -43,57 +43,59 @@ export default function Hero({ onOpenWorkspace }) {
             <div className="inline-flex items-center gap-2.5 px-3 py-1.5 rounded-full bg-white/80 backdrop-blur-md border border-[#DCDAD2] text-xs shadow-xs hover:border-[#171717] transition-all cursor-pointer group">
               <span className="w-2 h-2 rounded-full bg-[#C8E63A]" />
               <span className="font-mono text-[#5F5D57] text-[11px] font-medium tracking-tight">
-                Cadence 2.0 &bull; The calm AI workspace
+                INTELLIGENCE SHOULD NOT BE GENERALIZED
               </span>
               <ArrowRight className="w-3.5 h-3.5 text-[#5F5D57] transition-transform duration-200 group-hover:translate-x-1" />
             </div>
 
             {/* Editorial Contrast Headline (Section 4 & 5) */}
             <h1 className="text-6xl sm:text-7xl lg:text-[100px] xl:text-[112px] font-[550] tracking-[-0.055em] text-[#171717] leading-[0.91]">
-              <span className="block font-sans">Meetings,</span>
+              <span className="block font-sans">KNULL</span>
               <span className="block font-serif font-normal text-[#171717]">
-                made <span className="italic">useful.</span>
+                Artificial <span className="italic">Individuals.</span>
               </span>
             </h1>
 
             {/* Subhead with clear storytelling */}
             <p className="text-lg sm:text-xl text-[#5F5D57] max-w-lg leading-relaxed font-normal">
-              Your AI workspace for every conversation. Prepare before the call. Stay present during it. Turn meetings into useful work afterward.
+              Knull is building a new direction for artificial intelligence — systems designed to develop intelligence around context, objectives, experience and behaviour.
             </p>
 
             {/* CTA Buttons */}
             <div className="flex flex-wrap items-center gap-3.5 pt-2">
               <a
-                href="#pricing"
+                href="#problem"
                 onClick={(e) => {
                   e.preventDefault();
-                  smoothScrollTo('#pricing', -80);
+                  smoothScrollTo('#problem', -80);
                 }}
                 className="group inline-flex items-center justify-center gap-2 bg-[#C8E63A] text-[#171717] px-7 py-3.5 rounded-full text-sm font-semibold hover:bg-[#B8D62E] transition-all transform hover:-translate-y-0.5 shadow-xs cursor-pointer"
               >
-                <span>Get started</span>
+                <span>EXPLORE KNULL</span>
                 <ArrowRight className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1" />
               </a>
 
               <button
                 onClick={() => {
                   setShowDemoModal(true);
-                  addToast('Opening 90-second product demo');
+                  addToast('Opening Knull research overview');
                 }}
                 className="group inline-flex items-center justify-center gap-2 bg-white text-[#171717] border border-[#DCDAD2] px-6 py-3.5 rounded-full text-sm font-medium hover:bg-[#F1F0EA] transition-colors cursor-pointer"
               >
                 <Play className="w-3.5 h-3.5 text-[#5F5D57] transition-transform duration-200 group-hover:scale-110" />
-                <span>Watch demo</span>
+                <span>Research direction</span>
               </button>
             </div>
 
             {/* Subtle metadata footnote */}
             <div className="pt-2 text-xs font-mono text-[#88867F] flex items-center gap-3">
-              <span>Zero bot attendees</span>
+              <span>Context</span>
               <span>&bull;</span>
-              <span>Local 48kHz audio capture</span>
+              <span>Objectives</span>
               <span>&bull;</span>
-              <span>macOS &bull; Windows</span>
+              <span>Experience</span>
+              <span>&bull;</span>
+              <span>Behaviour</span>
             </div>
           </div>
 
@@ -131,7 +133,7 @@ export default function Hero({ onOpenWorkspace }) {
               className="relative w-full max-w-3xl bg-[#FAF9F5] rounded-3xl border border-[#DCDAD2] p-6 sm:p-8 shadow-2xl z-10"
             >
               <div className="flex items-center justify-between mb-4">
-                <h3 className="font-semibold text-lg text-[#171717]">Cadence Walkthrough &bull; 90 Seconds</h3>
+                <h3 className="font-semibold text-lg text-[#171717]">Knull Overview &bull; The Research Vision</h3>
                 <button 
                   onClick={() => setShowDemoModal(false)}
                   className="p-1.5 rounded-full text-[#88867F] hover:text-[#171717] cursor-pointer"
@@ -142,9 +144,9 @@ export default function Hero({ onOpenWorkspace }) {
               
               <div className="aspect-video w-full bg-[#171717] rounded-2xl flex flex-col items-center justify-center text-center p-8 text-[#F8F7F2] relative overflow-hidden">
                 <Sparkles className="w-10 h-10 text-[#C8E63A] mb-3 animate-pulse" />
-                <h4 className="text-xl font-semibold mb-2">Simulated Interactive Workspace</h4>
+                <h4 className="text-xl font-semibold mb-2">Beyond General Intelligence</h4>
                 <p className="text-xs text-[#88867F] max-w-md mb-6 leading-relaxed">
-                  Cadence records locally without inviting a bot to the call. Transcripts, decisions, and tasks are extracted and synced seamlessly with Linear, Notion, and Slack.
+                  The next breakthrough may not come from making intelligence bigger. It may come from making intelligence different. Systems designed around context, objectives, experience and behaviour.
                 </p>
                 <button
                   onClick={() => {
@@ -153,7 +155,7 @@ export default function Hero({ onOpenWorkspace }) {
                   }}
                   className="bg-[#C8E63A] text-[#171717] px-6 py-2.5 rounded-full text-xs font-semibold hover:bg-[#B8D62E] transition-colors cursor-pointer"
                 >
-                  Launch Active Workspace
+                  Explore Research Environment
                 </button>
               </div>
             </motion.div>

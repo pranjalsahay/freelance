@@ -83,7 +83,7 @@ export default function CommandPalette({ isOpen, onClose, onOpenWorkspace }) {
                   setSelectedIndex(0);
                 }}
                 autoFocus
-                placeholder="Search meetings, ask AI, or run command..."
+                placeholder="Search research directives, cognitive memory, or explore..."
                 className="w-full bg-transparent text-sm text-[#171717] placeholder-[#88867F] focus:outline-none"
               />
               <span className="hidden sm:inline-block font-mono text-[10px] uppercase text-[#88867F] bg-[#F1F0EA] px-2 py-0.5 rounded border border-[#E8E6DF]">
@@ -140,7 +140,7 @@ export default function CommandPalette({ isOpen, onClose, onOpenWorkspace }) {
               </div>
               <span className="flex items-center gap-1.5 text-[#171717]">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#C8E63A]" />
-                Cadence Quick Engine
+                Knull Cognitive Engine
               </span>
             </div>
           </motion.div>

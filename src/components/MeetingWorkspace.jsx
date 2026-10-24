@@ -197,7 +197,7 @@ export default function MeetingWorkspace({ onClose, initialMeetingId = 'northwin
           <div className="flex items-center gap-2">
             <span className="w-2 h-2 rounded-full bg-[#C8E63A] animate-pulse" />
             <span className="font-semibold text-xs sm:text-sm text-[#171717]">
-              Cadence Workspace Desktop
+              Knull Research Workspace
             </span>
           </div>
         </div>
@@ -448,7 +448,7 @@ export default function MeetingWorkspace({ onClose, initialMeetingId = 'northwin
                         <div className="p-4 rounded-xl bg-[#F8F7F2] border border-[#DCDAD2] text-[#5F5D57] leading-relaxed space-y-1 shadow-xs">
                           <div className="flex items-center gap-1.5 text-[10px] font-mono text-[#171717] font-semibold">
                             <span className="w-1.5 h-1.5 rounded-full bg-[#C8E63A]" />
-                            <span>Cadence Intelligence Synthesis</span>
+                            <span>Knull Cognitive Synthesis</span>
                           </div>
                           <p>{item.a}</p>
                         </div>
