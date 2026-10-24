@@ -62,14 +62,14 @@ export default function Founder() {
         }}
       />
 
-      {/* Primary Ambient Indigo/Periwinkle Glow */}
+      {/* Primary Ambient Lime Green Glow (Matches Website Theme) */}
       <motion.div
         style={{ scale: glowScale }}
-        className="absolute top-1/2 left-1/2 -translate-x-1/3 -translate-y-1/2 w-[620px] h-[620px] bg-[#5865F2]/16 rounded-full filter blur-[150px] pointer-events-none"
+        className="absolute top-1/2 left-1/2 -translate-x-1/3 -translate-y-1/2 w-[620px] h-[620px] bg-[#C8E63A]/14 rounded-full filter blur-[150px] pointer-events-none"
       />
 
       {/* Secondary Soft Accent Glow for Visual Depth */}
-      <div className="absolute bottom-10 right-1/4 w-[380px] h-[380px] bg-[#6E82FE]/10 rounded-full filter blur-[130px] pointer-events-none" />
+      <div className="absolute bottom-10 right-1/4 w-[380px] h-[380px] bg-[#C8E63A]/8 rounded-full filter blur-[130px] pointer-events-none" />
 
       <div className="max-w-[1240px] mx-auto px-6 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
@@ -77,7 +77,7 @@ export default function Founder() {
           {/* LEFT COLUMN: Founder Bio, Thesis & Directives */}
           <div className="lg:col-span-7 space-y-6 text-left">
             
-            {/* Monospace Eyebrow with Glowing Pulse Indicator */}
+            {/* Monospace Eyebrow with Lime Glowing Pulse Indicator */}
             <motion.div
               initial={{ opacity: 0, y: 15 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 15 }}
@@ -85,10 +85,10 @@ export default function Founder() {
               className="flex items-center gap-2.5"
             >
               <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#5865F2] opacity-75" />
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-[#5865F2]" />
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#C8E63A] opacity-75" />
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-[#C8E63A]" />
               </span>
-              <span className="font-mono text-xs uppercase tracking-[0.25em] text-[#818CF8] font-semibold">
+              <span className="font-mono text-xs uppercase tracking-[0.25em] text-[#C8E63A] font-semibold">
                 THE FOUNDER
               </span>
             </motion.div>
@@ -121,18 +121,18 @@ export default function Founder() {
               className="p-6 rounded-2xl bg-white/[0.03] border border-white/10 backdrop-blur-md max-w-xl space-y-2 shadow-inner"
             >
               <div className="flex items-center justify-between">
-                <span className="text-[10px] font-mono text-[#818CF8] uppercase tracking-wider font-semibold flex items-center gap-1.5">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#5865F2]" />
+                <span className="text-[10px] font-mono text-[#C8E63A] uppercase tracking-wider font-semibold flex items-center gap-1.5">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#C8E63A]" />
                   Core Philosophical Thesis
                 </span>
                 <span className="text-[10px] font-mono text-[#71717A]">Knull Origins</span>
               </div>
               <p className="text-sm sm:text-base text-[#E5E7EB] leading-relaxed font-sans font-normal">
-                &ldquo;Knull was born from looking at complex systems across disciplines. The most important behaviour is often found in the relationships between things, <span className="text-white font-medium underline decoration-[#5865F2]/50 decoration-2 underline-offset-4">not in the things themselves</span>.&rdquo;
+                &ldquo;Knull was born from looking at complex systems across disciplines. The most important behaviour is often found in the relationships between things, <span className="text-[#C8E63A] font-medium underline decoration-[#C8E63A]/50 decoration-2 underline-offset-4">not in the things themselves</span>.&rdquo;
               </p>
             </motion.div>
 
-            {/* Interactive Contact Button in Signature Indigo Glow */}
+            {/* Interactive Contact Button in Website Lime Green */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
@@ -141,17 +141,17 @@ export default function Founder() {
             >
               <button
                 onClick={handleContact}
-                className="group inline-flex items-center gap-2.5 bg-[#5865F2] hover:bg-[#4752C4] text-white font-mono text-xs sm:text-sm font-semibold px-7 py-3.5 rounded-xl transition-all duration-200 transform hover:-translate-y-0.5 shadow-[0_8px_24px_rgba(88,101,242,0.35)] hover:shadow-[0_12px_32px_rgba(88,101,242,0.5)] cursor-pointer tracking-wider uppercase"
+                className="group inline-flex items-center gap-2.5 bg-[#C8E63A] hover:bg-[#B8D62E] text-[#171717] font-mono text-xs sm:text-sm font-semibold px-7 py-3.5 rounded-xl transition-all duration-200 transform hover:-translate-y-0.5 shadow-[0_8px_24px_rgba(200,230,58,0.25)] hover:shadow-[0_12px_32px_rgba(200,230,58,0.4)] cursor-pointer tracking-wider uppercase"
               >
                 {copied ? (
                   <>
-                    <Check className="w-4 h-4 text-white" />
+                    <Check className="w-4 h-4 text-[#171717]" />
                     <span>Copied (arjun@knull.ai)</span>
                   </>
                 ) : (
                   <>
                     <span>CONTACT ARJUN</span>
-                    <ArrowUpRight className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                    <ArrowUpRight className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 text-[#171717]" />
                   </>
                 )}
               </button>
@@ -170,18 +170,18 @@ export default function Founder() {
               transition={{ duration: 0.8, delay: 0.25, ease: [0.22, 1, 0.36, 1] }}
               className="relative w-full max-w-[340px] sm:max-w-[380px] aspect-[3/4] bg-[#121215] rounded-3xl border border-[#27272A] p-8 shadow-[0_24px_60px_rgba(0,0,0,0.5)] flex flex-col justify-between items-center text-center overflow-hidden group cursor-pointer"
             >
-              {/* Dynamic Interactive Sheen on Mouse Hover */}
+              {/* Dynamic Interactive Sheen on Mouse Hover with Website Lime Glow */}
               <motion.div
                 className="absolute inset-0 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-500"
                 style={{
-                  background: `radial-gradient(420px circle at ${(mousePos.x + 0.5) * 100}% ${(mousePos.y + 0.5) * 100}%, rgba(88, 101, 242, 0.18), transparent 70%)`
+                  background: `radial-gradient(420px circle at ${(mousePos.x + 0.5) * 100}% ${(mousePos.y + 0.5) * 100}%, rgba(200, 230, 58, 0.15), transparent 70%)`
                 }}
               />
 
               {/* Top Metadata Pill */}
               <div className="w-full flex items-center justify-between text-[10px] font-mono text-[#71717A] border-b border-[#222226] pb-4 relative z-10">
                 <span className="flex items-center gap-1.5 font-semibold text-white/90">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#5865F2] animate-pulse" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#C8E63A] animate-pulse" />
                   <span>KNULL</span>
                 </span>
                 <span className="uppercase text-[#A1A1AA] bg-white/[0.06] px-2.5 py-0.5 rounded-full border border-white/10 font-medium">
@@ -199,7 +199,7 @@ export default function Founder() {
                   transition={{ type: "spring", stiffness: 300, damping: 25 }}
                   className="relative flex items-center justify-center"
                 >
-                  <span className="font-sans font-bold text-7xl sm:text-8xl tracking-[0.16em] text-[#222228] group-hover:text-[#31313A] transition-colors duration-300 block pl-3">
+                  <span className="font-sans font-bold text-7xl sm:text-8xl tracking-[0.16em] text-[#222228] group-hover:text-[#2d3024] transition-colors duration-300 block pl-3">
                     AR
                   </span>
                   <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
@@ -219,8 +219,8 @@ export default function Founder() {
               {/* Bottom Card Footer */}
               <div className="w-full pt-4 border-t border-[#222226] flex items-center justify-between text-[10px] font-mono text-[#71717A] relative z-10">
                 <span>Artificial Individuals</span>
-                <span className="text-[#818CF8] font-semibold flex items-center gap-1.5 bg-[#5865F2]/10 px-2.5 py-1 rounded-full border border-[#5865F2]/30">
-                  <Sparkles className="w-3 h-3 text-[#818CF8]" />
+                <span className="text-[#C8E63A] font-semibold flex items-center gap-1.5 bg-[#C8E63A]/10 px-2.5 py-1 rounded-full border border-[#C8E63A]/30">
+                  <Sparkles className="w-3 h-3 text-[#C8E63A]" />
                   <span>Research Lead</span>
                 </span>
               </div>
