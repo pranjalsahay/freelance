@@ -19,6 +19,7 @@ import Testimonials from './components/Testimonials';
 import Security from './components/Security';
 import Pricing from './components/Pricing';
 import FinalCTA from './components/FinalCTA';
+import Founder from './components/Founder';
 import Footer from './components/Footer';
 import MeetingWorkspace from './components/MeetingWorkspace';
 import { initLenis, getLenis } from './utils/scroll';
@@ -107,6 +108,7 @@ export default function App() {
             <Security />
             <Pricing onOpenWorkspace={handleOpenWorkspace} />
             <FinalCTA onOpenWorkspace={handleOpenWorkspace} />
+            <Founder />
           </main>
 
           {/* Dark Editorial Footer */}

@@ -9,7 +9,7 @@ const NAV_ITEMS = [
   { id: 'vision', label: 'The Vision' },
   { id: 'individuals', label: 'Artificial Individuals' },
   { id: 'applications', label: 'Applications' },
-  { id: 'people', label: 'People' },
+  { id: 'founder', label: 'People' },
 ];
 
 export default function Navbar({ onOpenCommandPalette, onOpenWorkspace }) {
